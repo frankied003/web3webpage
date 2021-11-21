@@ -5,20 +5,21 @@ import Grid from '@mui/material/Grid';
 
 import SendEtherButton from "../Components/SendEtherComponents/sendEtherButton"
 import Clock from '../Components/clock'
+import NftContainer from '../Components/NFTCollectionComponents/nftContainer';
 
 export default function Main() {
 
     return (
         <div>
             <div className="header">
-                <img src={etherImage} style={{ width: '5%', height: 'auto' }} />
+                <text style={{ fontSize: '40px' }}>Frankied.eth</text>
                 <SendEtherButton />
             </div>
-            <Grid container spacing={2} style={{ marginTop: '30px' }}>
-                <Grid item xs={12} style={{ borderBottom: '5px solid black' }}>
-                    <text style={{ fontSize: '30px' }}><b>NFT Collection</b></text>
-                </Grid>
-            </Grid>
+            <div className="openSeaContainer">
+                <text style={{ fontSize: '30px' }}>NFT Collection</text>
+                <div style={{ border: "4px solid black", marginTop: '5px' }} />
+                <NftContainer />
+            </div>
             <div className="footer">
                 <Clock />
                 <text>Created by <a target="_blank" href="https://twitter.com/frankied_eth">@frankied_eth</a></text>
