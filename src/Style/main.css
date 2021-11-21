@@ -1,0 +1,74 @@
+* {
+    font-family: 'Nanum Gothic Coding';
+}
+
+.buttonContainer {
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giveMeButton {
+    width: 200px;
+    height: 50px;
+    color: black;
+    background: white;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: -5px 5px black, -4px 4px black, -3px 3px black;
+    border: 1px solid black;
+    transition: margin-top 0.3s ease, 
+				margin-left 0.3s ease, 
+				box-shadow 0.3s ease;
+}
+
+.giveMeButton:active {
+    margin-left:-10px;
+	margin-top:10px;
+    box-shadow: 0px 0px 0px black,0px 0px 0px black,
+  				0px 0px 0px black,0px 0px 0px black;
+}
+
+.minus, .plus{
+    width:40px;
+    height:40px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input{
+    height:30px;
+    width: 100px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input:active{
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
