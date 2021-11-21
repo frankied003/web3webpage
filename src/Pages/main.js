@@ -28,7 +28,7 @@ export default function Main() {
                     setconnectedAccount(result[0]);
                     window.ethereum.request({ method: 'eth_chainId' }).then(chain => {
                         setchain(chainToStringDict[chain]);
-                        setbuttonText('Pay my tuition');
+                        setbuttonText('Send ether');
                     })
                 })
                 .catch(error => {
@@ -100,7 +100,7 @@ export default function Main() {
         <div>
             <Grid container spacing={2}>
                 <Grid container item justifyContent="center" textAlign="center" alignContent="center" xs={12}>
-                    <text>This ethereum will be going towards my tuition</text>
+                    <text>This ethereum will be going towards my crypto addiction</text>
                 </Grid>
                 {connectedAccount
                     ? (
