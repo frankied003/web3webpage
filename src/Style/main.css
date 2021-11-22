@@ -38,6 +38,24 @@
     width: 100%;
 }
 
+.collectionContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nftContainer {
+    margin-top: 10px;
+    position: relative;
+}
+
+.nftImage {
+    width: 22em;
+    height: 22em;
+}
+
 .sendEtherContainer {
     display: flex;
     flex-direction: column;
