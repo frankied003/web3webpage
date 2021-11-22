@@ -10,7 +10,7 @@ import NftContainer from '../Components/NFTCollectionComponents/nftContainer';
 export default function Main() {
 
     return (
-        <div>
+        <div style={{ height: '100%' }}>
             <div className="header">
                 <text style={{ fontSize: '40px' }}>Frankied.eth</text>
                 <SendEtherButton />
